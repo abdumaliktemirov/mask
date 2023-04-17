@@ -31,7 +31,7 @@ h6 {
     border: solid 3px #43A631;
     margin: 0 auto;
     max-width: 1920px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container {
@@ -48,6 +48,7 @@ header {
     z-index: 1000;
     padding: 20px 0 20px 0;
     margin-bottom: 20px;
+    margin: 0 auto;
 }
 
 .header-navigation {
@@ -282,8 +283,6 @@ header {
 .catalog-images__wrapper {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .catalog-image__info {
@@ -298,9 +297,197 @@ header {
     padding-bottom: 35px;
 }
 
+.catalog-images__wrapper {
+    display: flex;
+    gap: 20px
+}
+
+/* ! 1 ! */
+.catalog-image__card1 {
+    width: 25%;
+    position: relative;
+    height: 600px;
+    background-image: url(../image/Allergy_White_1.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden
+}
+
+.catalog-image__card1 img {
+    width: 200%;
+    position: absolute;
+}
+
+.catalog-image__card-content {
+    position: absolute;
+    bottom: 0;
+    background: #F8FAFB;
+    text-align: center;
+    width: 100%;
+    transition: 200ms;
+}
+
+.catalog-image__card-content p {
+    margin-top: 15px;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.catalog-image__card-content h3 {
+    font-size: 24px;
+}
+
+.catalog-image__card-content h2 {
+    margin-top: 35px;
+    margin-bottom: 18px;
+    color: #8E8F90;
+    font-size: 36px;
+}
+
+.catalog-image__card-bg-1 {
+    background: #e6e9eb;
+    position: absolute;
+    height: 2000px;
+    width: 260px;
+    transform: rotate(5deg) translate(-90px, -40px);
+    z-index: -1;
+    transition: 200ms;
+}
+
+.catalog-image__card-bg-2 {
+    background: #f7f9fa;
+    position: absolute;
+    height: 2000px;
+    width: 260px;
+    transform: rotate(5deg) translate(167px, -40px);
+    z-index: -1;
+    transition: 200ms;
+}
+
+.catalog-image__card-content-widget {
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    height: 80px;
+    background-color: #FFC001;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: -90%;
+    transform: skew(-10deg);
+    transition: all 0.5s;
+}
+
+.catalog-image__card-content-widget span {
+    color: #fff;
+    transform: skew(10deg);
+    margin-left: 40px;
+}
+
+.catalog-image__card1:hover .catalog-image__card-content {
+    background: #43A631;
+    color: #fff
+}
+
+.catalog-image__card1:hover .catalog-image__card-content-widget {
+    right: -20%;
+}
+
+.catalog-image__card1:hover .catalog-image__card-bg-1 {
+    background: #43A631
+}
+
+.catalog-image__card1:hover .catalog-image__card-bg-2 {
+    background: #65BC47
+}
+
+/* ! 2 ! */
+.catalog-image__card2 {
+    width: 25%;
+    position: relative;
+    height: 600px;
+    background-image: url(../image/Techno_Black_2.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden
+}
+
+.catalog-image__card2 img {
+    width: 200%;
+    position: absolute;
+}
+
+.catalog-image__card2:hover .catalog-image__card-content-widget {
+    right: -20%;
+}
+
+.catalog-image__card2:hover .catalog-image__card-bg-1 {
+    background: #43A631
+}
+
+.catalog-image__card2:hover .catalog-image__card-bg-2 {
+    background: #65BC47
+}
+
+/* ! 3 ! */
+.catalog-image__card3 {
+    width: 25%;
+    position: relative;
+    height: 600px;
+    background-image: url(../image/UltraLight_Sand_3.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden
+}
+
+.catalog-image__card3 img {
+    width: 200%;
+    position: absolute;
+}
+
+.catalog-image__card3:hover .catalog-image__card-content-widget {
+    right: -20%;
+}
+
+.catalog-image__card3:hover .catalog-image__card-bg-1 {
+    background: #43A631
+}
+
+.catalog-image__card3:hover .catalog-image__card-bg-2 {
+    background: #65BC47
+}
+
+/* ! 4 ! */
+.catalog-image__card4 {
+    width: 25%;
+    position: relative;
+    height: 600px;
+    background-image: url(../image/Bandit_Red_4.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden
+}
+
+.catalog-image__card4 img {
+    width: 200%;
+    position: absolute;
+}
+
+.catalog-image__card4:hover .catalog-image__card-content-widget {
+    right: -20%;
+}
+
+.catalog-image__card4:hover .catalog-image__card-bg-1 {
+    background: #43A631
+}
+
+.catalog-image__card4:hover .catalog-image__card-bg-2 {
+    background: #65BC47
+}
+
 /* seller series  */
 #seller-series {
-    height: 900px;
     background: #F8FAFB;
 }
 
@@ -470,7 +657,6 @@ header {
     order: 0;
     flex-grow: 0;
     border-color: #43A631;
-
 }
 
 .mask-text__image {
@@ -754,20 +940,15 @@ form textarea {
 .contakt-main__map {
     width: 1300px;
     height: 538px;
-    border: solid 1px #dbe6eb;
     margin-top: 52px;
     margin-bottom: 82px;
 }
-
-
-
 
 /* Footer series */
 .footer-wrap {
     display: flex;
     position: relative;
 }
-
 
 .footer-left__info {
     background-color: #343332;
@@ -827,4 +1008,76 @@ form textarea {
 .fa-brands {
     width: 40px;
     color: #fff;
+}
+
+
+/*! Mediya start !*/
+
+@media (max-width:1400px) {
+    .wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .home-right__background img {
+        margin-bottom: 100px;
+    }
+
+    .seller-cards {
+        max-width: 30%;
+        display: flex;
+    }
+
+    .seller-card {
+        width: 100%;
+    }
+
+    .seller-card__image img {
+        max-width: 100%;
+    }
+
+    .seller-card__text p {
+        max-width: 100%;
+    }
+
+    .mask-link__items {
+        max-width: 100%;
+        margin-bottom: 200px;
+    }
+
+    .mask-left__image {
+        display: none;
+    }
+
+    .question-title h1 {
+        max-width: 100%;
+    }
+
+    .question-title h3 {
+        max-width: 40%;
+    }
+
+    .question-right {
+        max-width: 40%;
+        margin-top: 10px;
+    }
+
+    .question-right__title h1{
+        max-width: 100%;
+    }
+    .contakt-main__map img{
+        max-width: 80%;
+    }
+
+    .footer-left{
+        max-width: -300px;
+    }
+
+    .footer-right{
+        transform: translateX(-400px);
+    }
+
+    .footer-left__info{
+        max-width: ;
+    }
 }
