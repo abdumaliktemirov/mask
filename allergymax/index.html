@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="wrapper">`
+    <div class="wrapper">
         <!-- header series start -->
         <header>
             <div class="container">
@@ -35,23 +35,20 @@
         </header>
         <!-- header series end -->
 
-
         <!-- home series start -->
-        <section id="home">
+        <section id="home" class="home">
             <div class="container">
                 <div class="home-wrap">
                     <div class="home-left">
-                        <h3>Респиратор</h3>
-                        <h1>Ultra light Respro </h1>
-                        <b class="home-text__bold">Ультралегкая и дышащая маска с фильтрующим материалом высокой
-                            эффективности</b>
-                        <p>Подходит всем для использования в городских условиях, на работе, в дороге, а также во время
-                            физических нагрузок, таких как бег или езда на велосипеде
-                        </p>
-                        <h6>
-                            Цвет в наличии: <span>песочный, олива, черный</span>
-                        </h6>
-                        <button class="home-btn">Смотреть в каталоге</button>
+                        <div class="home-left__texts">
+                            <h3>Респиратор</h3>
+                            <h1>Ultra light Respro </h1>
+                            <b class="home-text__bold">Ультралегкая и дышащая маска с фильтрующим материалом высокой эффективности</b>
+                            <p>Подходит всем для использования в городских условиях, на работе, в дороге, а также во
+                                время физических нагрузок, таких как бег или езда на велосипеде</p>
+                            <h6>Цвет в наличии: <span>песочный, олива, черный</span> </h6>
+                            <button class="home-btn">Смотреть в каталоге</button>
+                        </div>
                         <div class="slider-container">
                             <div class="slider-left">
                                 <button class="slider-button active"></button>
@@ -59,12 +56,11 @@
                                 <button class="slider-button"></button>
                                 <button class="slider-button"></button>
                             </div>
-                            <div class="slider-reght">
-
-                            </div>
+                            <div class="slider-reght"></div>
                         </div>
                     </div>
                     <div class="home-rigth">
+                        <div class="home-right__background-fly"></div>
                         <div class="home-right__background">
                             <img src="./image/UltraLight_grl.png" alt="iamge-grl">
                         </div>
@@ -106,8 +102,7 @@
                         <div class="about-information__right">
                             <div class="about-information__right1">
                                 <img src="./image/log/logo-ptichka.svg" alt="image-ptichka">
-                                <p>Креативный и ультрамодный дизайн не оставит равнодушным спортсменов и их поклонников
-                                </p>
+                                <p>Креативный и ультрамодный дизайн не оставит равнодушным спортсменов и их поклонников </p>
                             </div>
                             <div class="about-information__right1">
                                 <img src="./image/log/logo-ptichka.svg" alt="image-ptichka">
@@ -121,7 +116,6 @@
                                 <img src="./image/log/logo-ptichka.svg" alt="image-ptichka">
                                 <p>Маска – это не лекарство: аллергию она не вылечит, но обеспечивает комфорт</p>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -140,6 +134,19 @@
                         <div class="catalog-images">
                             <div class="catalog-image__one">
                                 <img src="./image/Tyolka-1.png" alt="">
+                            </div>
+                            <div class="catalog-image__info">
+                                <div class="catalog-info__top">
+                                    <div class="catalog-info__job">
+                                        Респиратор
+                                    </div>
+                                    <div class="catalog-info__name">
+                                        Allergy respro
+                                    </div>
+                                </div>
+                                <div class="catalog-info__price">
+                                    5900 р
+                                </div>
                             </div>
                         </div>
                         <div class="catalog-images">
@@ -339,14 +346,20 @@
                         </div>
                         <div class="question-input">
                             <form class="question-input__forms" action="#!">
-                                <input class="question-input__form" type="text" placeholder="Александр ПатI" name="name">
+                                <input class="question-input__form" type="text" placeholder="Александр ПатI"
+                                    name="name">
                                 <div class="half-row contact__firstname">
-                                    <input class="input-contact__firstname" type="email" placeholder="Введите почту" name="phone">
-                                    <input class="input-contact__firstname" type="tel" placeholder="+7 Введите номер ">
+                                    <input class="input-contact__firstname" type="email" placeholder="Введите почту"
+                                        name="email">
+                                    <input class="input-contact__firstname" type="tel" placeholder="+7 Введите номер "
+                                        name="phone">
                                 </div>
-                                <textarea name="message" rows="20" placeholder="Задайте вопрос для ответа на почту"></textarea>
-                                <button class="button contact__send1" type="submit">Ответить на почту</button>
-                                <a href="#!" class="button contact__send2">Обратный звонок</a>
+                                <textarea name="message" rows="20"
+                                    placeholder="Задайте вопрос для ответа на почту"></textarea>
+                                <div class="question-input__btn">
+                                    <button class="button contact__send1" type="submit">Ответить на почту</button>
+                                    <a href="#!" class="button contact__send2">Обратный звонок</a>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -359,8 +372,7 @@
                                 <p> Этот фильтр задерживает:</p>
                                 <p> Cверхмелкие частицы, включая пыльцу и некоторые бактерии, споры растений, все виды
                                     аллергенной пыли, глиняную, угольную пыль, дым, копоть, домашнюю и строительную
-                                    пыль, сигаретный дым, частицы шерсти домашних животных, выхлопные газы.</p>
-                                <br>
+                                    пыль, сигаретный дым, частицы шерсти домашних животных, выхлопные газы.</p> <br>
                                 <p>2. Двуслойный - это Хепа-фильтр + угольный фильтр Dynamic ACC</p>
                                 <p> (Activated Charcoal Cloth)</p>
                                 <p>Этот фильтр задерживает Вышеперечисленное, плюс:
@@ -381,21 +393,87 @@
         </section>
         <!-- question series end -->
 
+        <!-- contakt series start -->
+        <section is="contakt">
+            <div class="container">
+                <div class="contakt-wrap">
+                    <div class="contakt-mains">
+                        <div class="contakt-main">
+                            <a href="#!">Контакты</a>
+                        </div>
+                        <div class="contakt-main__moskov">
+                            <p href="#!">Москва</p>
+                            <span>Коровинское шоссе д.19</span>
+                        </div>
+                        <div class="contakt-main__data">
+                            <p>Время работы:</p>
+                            <span>Ежедневно с 9:00 до 22:00</span>
+                        </div>
+                        <div class="contakt-main__number">
+                            <span>+7 (495) 644-62-21</span>
+                            <a href="#!">info@allergymask.ru</a>
+                        </div>
+                    </div>
+                    <div class="contakt-main__map">
+                        <img src="./image/log/Rectangle_map.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contakt series end -->
 
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- footer series start -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-left">
+                        <div class="footer-left__info">
+                            <div class="footer-left__info-text1">
+                                2016-2022 © AllergyMask.ru
+                            </div>
+                            <div class="footer-left__info-text2">
+                                Маски-респираторы для спорстменов, аллергиков и активного образа жизни
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-right__icons">
+                            <img src="./image/Green-right.svg" alt="">
+                        </div>
+                        <div class="footer-right__icon">
+                            <div class="footer-right__icon-net">
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 0.602225L15.9946 16.2923C15.9946 16.2923 15.5741 17.3801 14.4189 16.8584L7.48458 11.3526L7.45242 11.3364C8.38909 10.4654 15.6524 3.70266 15.9698 3.39612C16.4613 2.92136 16.1562 2.63873 15.5856 2.99736L4.85679 10.053L0.717638 8.61077C0.717638 8.61077 0.0662573 8.37083 0.00359284 7.84911C-0.0598962 7.32653 0.739076 7.0439 0.739076 7.0439L17.6131 0.188948C17.6131 0.188948 19 -0.44207 19 0.602225Z" fill="white" /></svg>
+                            </div>
+                            <div class="footer-right__icon-net">
+                                <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9825 14C4.46596 14 0.178638 8.74474 0 0H3.76515C3.88882 6.41842 6.66459 9.13714 8.86321 9.6977V0H12.4085V5.53553C14.5796 5.2973 16.8607 2.77477 17.6302 0H21.1755C20.8855 1.43908 20.3075 2.80165 19.4776 4.0025C18.6477 5.20335 17.5837 6.21663 16.3523 6.97898C17.7269 7.67555 18.941 8.6615 19.9145 9.87175C20.888 11.082 21.5988 12.489 22 14H18.0974C17.7373 12.6876 17.0054 11.5128 15.9934 10.6228C14.9814 9.73284 13.7343 9.16727 12.4085 8.997V14H11.9825Z" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="footer-right__icon-net">
+                                <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.3809 11.2407H9.48272L9.96972 7.78232H6.38027V5.89213C6.38027 4.45545 6.80797 3.18147 8.03243 3.18147H10V0.163401C9.6543 0.112165 8.92317 0 7.54164 0C4.65683 0 2.96556 1.67209 2.96556 5.48155V7.78232H0V11.2407H2.96556V19.8373C3.55286 19.9342 4.14774 20 4.75839 20C5.31037 20 5.8491 19.9446 6.3809 19.8657V11.2407Z" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="footer-right__icon-net">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"  xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 5.5C20 6.32843 19.3284 7 18.5 7C17.6716 7 17 6.32843 17 5.5C17 4.67157 17.6716 4 18.5 4C19.3284 4 20 4.67157 20 5.5Z" fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6C0 2.68629 2.68629 0 6 0H18C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H6C2.68629 24 0 21.3137 0 18V6ZM6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6C2 3.79086 3.79086 2 6 2Z" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="footer-right__icon-net">
+                                <svg width="22" height="16" viewBox="0 0 22 16" fill="none"   xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.26249 15.0568C1.87023 14.9408 1.51232 14.7343 1.21896 14.4549C0.925599 14.1754 0.705403 13.8312 0.576947 13.4512C-0.157079 11.4874 -0.374569 3.28693 1.03911 1.66807C1.50961 1.14145 2.17389 0.817218 2.88777 0.765759C6.68024 0.36768 18.3975 0.420757 19.7432 0.898453C20.1217 1.01832 20.4675 1.22026 20.7547 1.48912C21.0419 1.75799 21.263 2.08681 21.4015 2.45096C22.2035 4.48117 22.2307 11.8589 21.2928 13.8095C21.044 14.3173 20.6275 14.7285 20.1102 14.9772C18.6965 15.6672 4.13833 15.6539 2.26249 15.0568ZM8.28422 11.2087L15.0808 7.75869L8.28422 4.28213V11.2087Z" fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer series end -->
     </div>
-
 </body>
 
 </html>
