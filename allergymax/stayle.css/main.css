@@ -28,10 +28,9 @@ h6 {
 }
 
 .wrapper {
-    border: solid 3px #43A631;
     margin: 0 auto;
-    max-width: 1920px;
-    /* overflow: hidden; */
+    overflow: hidden;
+    margin-bottom: 1000px;
 }
 
 .container {
@@ -489,6 +488,7 @@ header {
 /* seller series  */
 #seller-series {
     background: #F8FAFB;
+    padding-bottom: 82px;
 }
 
 .seller-wrap {
@@ -1012,15 +1012,33 @@ form textarea {
 
 
 /*! Mediya start !*/
-
 @media (max-width:1400px) {
     .wrapper {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
-    .home-right__background img {
-        margin-bottom: 100px;
+    .catalog-image__card1 {
+        max-width: 30%;
+    }
+
+    .catalog-images__wrapper {
+        max-width: 90%;
+    }
+
+    .contakt-mains {
+        max-width: 90%;
+    }
+
+    .home-right__background {
+        max-width: 80%;
+        transform: translateY(300px);
+    }
+
+    .home-right__background-fly {
+        display: none;
+        background-image: none;
+
     }
 
     .seller-cards {
@@ -1045,7 +1063,22 @@ form textarea {
         margin-bottom: 200px;
     }
 
+
+    .mask-right__info-texts p {
+        max-width: 80%;
+    }
+
+
+    .mask-right__info-texts {
+        max-width: 100%;
+    }
+
+    .question-input {
+        max-width: 100%;
+    }
+
     .mask-left__image {
+        /* max-width: 30%; */
         display: none;
     }
 
@@ -1062,22 +1095,167 @@ form textarea {
         margin-top: 10px;
     }
 
-    .question-right__title h1{
+    .question-right__title h1 {
         max-width: 100%;
     }
-    .contakt-main__map img{
+
+    .contakt-main__map img {
         max-width: 80%;
     }
 
-    .footer-left{
+    .footer-left {
         max-width: -300px;
     }
 
-    .footer-right{
+    .footer-right {
         transform: translateX(-400px);
     }
 
-    .footer-left__info{
-        max-width: ;
+
+
+    .header-navigation {
+        max-width: 50%;
     }
+
+    .about-wrap {
+        /* max-width: 100%; */
+    }
+
+    .about-information__left {
+        max-width: 40%;
+    }
+
+    .about-information__right {
+        max-width: 40%;
+    }
+
+    .footer-left__info {
+
+        max-width: 100%;
+    }
+
+    .footer-right {
+        max-width: 40%;
+    }
+
+    .footer-right__icons {
+        max-width: 40%;
+    }
+
+    .footer-left__info-text1 {
+        max-width: 30%;
+        transform: translateX(200px);
+    }
+}
+
+/* 1200px */
+@media (max-width:1200px) {
+
+    .footer-left__info-text2 {
+        max-width: 40%;
+        transform: translateX(200px);
+
+    }
+
+    .home-right__background img {
+        max-width: 100%;
+    }
+
+    .seller-cards {
+        max-width: 28%;
+    }
+
+    .question-input__form {
+        max-width: 77%;
+    }
+
+    .half-row {
+        max-width: 40%;
+    }
+
+    textarea {
+        max-width: 77%;
+    }
+
+    .question-input__btn button {
+        max-width: 30%;
+    }
+
+    .question-input__btn a {
+        max-width: 10%;
+    }
+
+    .question-right__card {
+        transform: translateX(-110px);
+    }
+
+    .question-right__lists {
+        transform: translateX(-110px);
+    }
+
+    .contakt-main__map img {
+        max-width: 70%;
+    }
+
+    .footer-left__info {
+        margin-left: 200px;
+    }
+
+    .footer-left__info-text1 {
+        transform: translateX(-60px);
+    }
+
+    .footer-left__info-text2 {
+        transform: translateX(-60px);
+
+    }
+
+    .footer-right__icons img{
+        max-height: 100%;
+        transform: translateX(800px);
+    }
+
+    .contakt-mains>div {
+        max-width: 60%;
+    }
+    .footer-right__icon{
+margin-left: -100px;
+margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
