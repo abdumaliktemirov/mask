@@ -384,7 +384,7 @@ header {
     margin-left: 40px;
 }
 
-.catalog-image__card1:hover .catalog-image__card-content {
+.catalog-image__card1:hover .catalog-image__card-content{
     background: #43A631;
     color: #fff
 }
@@ -415,6 +415,11 @@ header {
 .catalog-image__card2 img {
     width: 200%;
     position: absolute;
+}
+
+.catalog-image__card2:hover .catalog-image__card-content{
+    background: #43A631;
+    color: #fff
 }
 
 .catalog-image__card2:hover .catalog-image__card-content-widget {
@@ -449,6 +454,11 @@ header {
     right: -20%;
 }
 
+.catalog-image__card3:hover .catalog-image__card-content{
+    background: #43A631;
+    color: #fff
+}
+
 .catalog-image__card3:hover .catalog-image__card-bg-1 {
     background: #43A631
 }
@@ -475,6 +485,11 @@ header {
 
 .catalog-image__card4:hover .catalog-image__card-content-widget {
     right: -20%;
+}
+
+.catalog-image__card4:hover .catalog-image__card-content{
+    background: #43A631;
+    color: #fff
 }
 
 .catalog-image__card4:hover .catalog-image__card-bg-1 {
