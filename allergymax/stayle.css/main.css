@@ -30,7 +30,6 @@ h6 {
 .wrapper {
     margin: 0 auto;
     overflow: hidden;
-    margin-bottom: 1000px;
 }
 
 .container {
@@ -282,6 +281,7 @@ header {
 .catalog-images__wrapper {
     display: flex;
     gap: 20px;
+    cursor: pointer;
 }
 
 .catalog-image__info {
@@ -294,11 +294,6 @@ header {
 
 .catalog-info__top {
     padding-bottom: 35px;
-}
-
-.catalog-images__wrapper {
-    display: flex;
-    gap: 20px
 }
 
 /* ! 1 ! */
@@ -597,6 +592,7 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+    transform: scale(19deg);
 }
 
 .seller-cards {
@@ -662,6 +658,8 @@ header {
 
 .mask-wrap__titles .active {
     font-weight: 700;
+    border-color: #43A631;
+
 }
 
 .mask-wrap__titles li a:hover {
@@ -843,7 +841,13 @@ form textarea {
     color: #43A631;
     font-weight: bold;
     border: solid 1px #43A631;
+    transition: all 0.3s;
 }
+
+.question-input__btn a:hover{
+    background: #43A631;
+    color: #fff;
+    }
 
 .question-right {
     width: 640px;
